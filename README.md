@@ -16,10 +16,10 @@ In short: Ascii-encoded, <CR><LF>-delimited, field-wise protocol with checksum. 
 ### Reserved Characters
 ASCII | Meaning
 ------|--------
-<CR><LF> | End of message
-$ | Start of message
-, | Field delimiter
-* | Checksum delimiter
+`<CR><LF>` | End of message
+`$` | Start of message
+`,` | Field delimiter
+`*` | Checksum delimiter
 
 ### Message Structure
 | `$` | value identifier (string, max ?? chars) | `,` | value (`%f`-style float32) | `*` | checksum | `<CR><LF>` |
